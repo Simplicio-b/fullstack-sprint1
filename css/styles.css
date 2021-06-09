@@ -238,10 +238,6 @@ main {
   }
 }
 
-body {
-  background-color: #fdfdfd;
-}
-
 footer {
   margin-top: 20px;
   display: flex;
@@ -448,6 +444,10 @@ footer {
   align-items: center;
   justify-content: center;
   flex: 2;
+}
+
+body {
+  background-color: #fdfdfd;
 }
 
 /*# sourceMappingURL=styles.css.map */

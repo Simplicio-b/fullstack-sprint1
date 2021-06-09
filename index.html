@@ -371,18 +371,18 @@
     <script>
 
       function onHandleMenu(x) {
+        // itens do menu
         const menu = document.querySelector(".menu")
+        // verificação da classe
         x.classList.toggle("change")
-        
         x.classList.forEach(e => {
           if(e == "change") {
             menu.style = "display: flex"
-           
             return
           }
           
           menu.style = "display: none"
-
+          return
         })
       }
     </script>
