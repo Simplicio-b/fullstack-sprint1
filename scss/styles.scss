@@ -6,10 +6,90 @@
   @media (max-width: 999px) { @content; }
 }
 
+// reaproveitamento
+
+@mixin txt-cnt-offs-mob-app {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@mixin d-cnt-offs-mob-app {
+  padding-top: 30px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
 // styles
 @import 'menu', 'header', 'main';
 
 body {
   background-color: #fdfdfd;
   // color: red;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.content__offers__mobile-app {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.offers {
+  @include d-cnt-offs-mob-app;
+  font-family: 'Ubuntu', sans-serif;
+
+  & > p {
+    @include txt-cnt-offs-mob-app;
+  }
+
+  & > form  {
+
+
+    & input {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #BBB;
+      padding: 0 0 7px 5px;
+      margin-right: 10px;
+      font-style: italic;
+      font-size: 12px;
+      height: 25px;
+    }
+
+    & button {
+      font-size: 12px;
+      height: 35px;
+      background-color: #DDD;
+      color: #999;
+      border-radius: 4px;
+      padding: 0 12px;
+      border: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer
+    }
+  }
+
+}
+
+.mobile-apps {
+  @include d-cnt-offs-mob-app;
+
+  & > p {
+    @include txt-cnt-offs-mob-app;
+    font-weight: bold;
+  }
+
 }

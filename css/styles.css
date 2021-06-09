@@ -109,10 +109,6 @@ header > input:hover {
   border: 1px solid #111;
 }
 
-body {
-  background-color: #fdfdfd;
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -215,6 +211,76 @@ main {
   .products > ol > li {
     width: 50%;
   }
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.content__offers__mobile-app {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.offers {
+  padding-top: 30px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.offers > p {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.offers > form input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #BBB;
+  padding: 0 0 7px 5px;
+  margin-right: 10px;
+  font-style: italic;
+  font-size: 12px;
+  height: 25px;
+}
+.offers > form button {
+  font-size: 12px;
+  height: 35px;
+  background-color: #DDD;
+  color: #999;
+  border-radius: 4px;
+  padding: 0 12px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-apps {
+  padding-top: 30px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile-apps > p {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
