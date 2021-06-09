@@ -283,4 +283,52 @@ footer {
   font-weight: bold;
 }
 
+.content__pay__social__access {
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payment > h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.social h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.social div {
+  display: flex;
+}
+.social div img {
+  margin-right: 20px;
+}
+.social div span {
+  text-align: center;
+  margin-right: 20px;
+}
+.social div span p {
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+.accessibility > h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=styles.css.map */

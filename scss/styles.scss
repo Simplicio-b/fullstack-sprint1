@@ -22,6 +22,14 @@
   align-items: center;
 }
 
+@mixin rodape-h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 // styles
 @import 'menu', 'header', 'main';
 
@@ -92,4 +100,47 @@ footer {
     font-weight: bold;
   }
 
+}
+
+.content__pay__social__access {
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payment > h3 {
+  @include rodape-h3;
+}
+
+.social {
+  & h3 {
+    @include rodape-h3;
+  }
+
+  & div  {
+    display: flex;
+    // background-color: #BBB;
+
+    & img {
+      margin-right: 20px
+    }
+
+    & span {
+      text-align: center;
+      margin-right: 20px;
+
+      & p {
+        font-size: 12px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.accessibility > h3 {
+  @include rodape-h3;
 }
