@@ -19,8 +19,16 @@
   </head>
   <body>
     <header>
+      <!-- menu responsivo -->
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- padrão desktop -->
       <h1>
-        <img src="assets/riachuelo.svg" alt="" />
+        <img src="assets/riachuelo.svg" alt="" class="logo"/>
+        <img src="assets/rchlo.svg" alt="" class="logo__responsivo" />
       </h1>
       <input type="search" placeholder="🔍 O quê você está procurando" />
       <nav>
@@ -175,6 +183,7 @@
         </ol>
       </section>
     </main>
+
     <footer>
       <div class="offers">
         <p>Receba ofertas e novidades por e-mail</p>
@@ -332,5 +341,25 @@
         <img src="assets/ra1000.webp" alt="" />
       </div>
     </footer>
+
+    <script>
+
+      function myFunction(x) {
+        const menu = document.querySelector(".menu")
+        x.classList.toggle("change")
+        
+        x.classList.forEach(e => {
+          if(e == "change") {
+            menu.style = "display: flex"
+           
+            return
+          }
+          
+          menu.style = "display: none"
+
+        })
+      }
+    </script>
+
   </body>
 </html>
