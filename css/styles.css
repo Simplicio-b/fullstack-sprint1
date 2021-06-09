@@ -331,4 +331,29 @@ footer {
   font-size: 14px;
 }
 
+.content__copy {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  flex: 10;
+}
+.copyright p {
+  font-size: 13px;
+  line-height: 20px;
+  text-justify: initial;
+}
+
+.complaints {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+}
+
 /*# sourceMappingURL=styles.css.map */
