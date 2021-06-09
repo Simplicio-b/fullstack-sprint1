@@ -11,6 +11,23 @@
     display: none;
     align-items: flex-start;
     flex-direction: column;
+    width: 100%;
+    // background-color: black;
+  }
+
+  & li{
+    @include start-responsivo {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      line-height: 50px;
+      border-bottom: 1px solid #d4d4d4;
+
+      &::after {
+        content: "˃";
+        font-weight: bold;
+      }
+    }
   }
 }
 
@@ -21,19 +38,24 @@
   font-size: 13px;
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
-  @include start-responsivo {
-    line-height: 30px;
 
+  &:hover {
+    padding: 2px;
+    border-bottom: 2px solid #555;
+    color: #555;
+    font-weight: bold;
   }
-}
 
-.menu_items:hover {
-  padding: 2px;
-  border-bottom: 2px solid #555;
-  color: #555;
-  font-weight: bold;
-}
+  @include start-responsivo {
+    flex: 1;
+    line-height: 30px;
+    width: 100%;
+    // background-color: aqua;
+    // border-bottom: 1px solid #444;
+    // width
+  }
 
+}
 
 .logo {
   @include start-responsivo {
