@@ -1,0 +1,119 @@
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.breadcrumbs {
+  width: 80%;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0 12px 2px;
+
+  @include start-responsivo {
+    display: none;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #777;
+    font-weight: 600;
+    &::after {
+      margin: 0px 5px;
+      content: "  /  ";
+    }
+  }
+
+  &__item:last-child {
+    font-weight: bold;
+    color: #333;
+  }
+
+}
+
+.filters {
+  width: 80%;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0 12px 2px;
+
+  @include start-responsivo {
+    display: none;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    // margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+
+    &::after {
+      margin: 0px 15px 0px 15px;
+      font-weight: bold;
+      font-size: 16px;
+      content: "˅";
+    }
+  }
+
+}
+
+.products {
+  padding-top: 5px;
+  width: 80%;
+
+  & > ol {
+    // background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & > ol > li {
+    width: 25%;
+
+    & > div {
+      margin: 10px 5px;
+      cursor: pointer;
+      padding: 1px;
+
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+
+      & > p {
+        margin-top: 8px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.3rem;
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+      }
+
+      & > p:last-child {
+        padding: 6px 0;
+        font-weight: bold;
+      }
+
+      &:hover {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+      }
+    }
+
+    @include start-responsivo {
+      width: 50%;
+    }
+  }
+
+}

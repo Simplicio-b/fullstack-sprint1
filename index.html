@@ -20,7 +20,7 @@
   <body>
     <header>
       <!-- menu responsivo -->
-      <div class="container" onclick="myFunction(this)">
+      <div class="menu-responsivo" onclick="onHandleMenu(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -50,23 +50,25 @@
     </header>
 
     <main>
+
       <section class="breadcrumbs">
         <nav>
-          <ol>
-            <li><a href="">Home</a></li>
-            <li><a href="">Infantil</a></li>
-            <li><a href="">Personagens</a></li>
-            <li>Mario Bros</li>
+          <ol class="breadcrumbs__items">
+            <li class="breadcrumbs__item"><a href="">Home</a></li>
+            <li class="breadcrumbs__item"><a href="">Infantil</a></li>
+            <li class="breadcrumbs__item"><a href="">Personagens</a></li>
+            <li class="breadcrumbs__item">Mario Bros</li>
           </ol>
         </nav>
       </section>
+
       <section class="filters">
-        <ul>
-          <li>Tamanho</li>
-          <li>Cor</li>
-          <li>Departamento</li>
-          <li>Categoria</li>
-          <li>Manga</li>
+        <ul class="filters__items">
+          <li class="filters__item">Tamanho</li>
+          <li class="filters__item">Cor</li>
+          <li class="filters__item">Departamento</li>
+          <li class="filters__item">Categoria</li>
+          <li class="filters__item">Manga</li>
         </ul>
       </section>
 
@@ -344,7 +346,7 @@
 
     <script>
 
-      function myFunction(x) {
+      function onHandleMenu(x) {
         const menu = document.querySelector(".menu")
         x.classList.toggle("change")
         
